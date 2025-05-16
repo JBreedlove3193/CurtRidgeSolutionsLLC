@@ -1,38 +1,31 @@
-<!-- Exquisite Homepage for CurtRidge Solutions LLC -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home | CurtRidge Solutions LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CurtRidge Solutions LLC</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     :root {
-      --primary: #2c2c2c; /* Dark Gray */
-      --accent: #4da6ff;  /* Blue from logo */
-      --bg: #f8f9fa;      /* Light background */
-      --text: #333;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      --primary-dark: #2f2f2f;
+      --accent-blue: #007acc;
+      --light-gray: #f4f4f4;
+      --text-color: #333;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-gray);
+      color: var(--text-color);
     }
 
     header {
+      background-color: var(--primary-dark);
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1.5rem 3rem;
-      background-color: var(--primary);
-      color: white;
     }
 
     .logo {
@@ -41,126 +34,98 @@
 
     nav a {
       color: white;
-      text-decoration: none;
       margin-left: 2rem;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: var(--accent);
+      color: var(--accent-blue);
     }
 
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x800/?industrial,technology') center/cover no-repeat;
-      color: white;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 6rem 2rem;
-      position: relative;
     }
 
-    .hero .hero-logo {
-      max-width: 250px;
-      margin: 0 auto 2rem;
-      display: block;
-      filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 800;
+    .hero img {
+      max-width: 200px;
       margin-bottom: 1rem;
     }
 
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: var(--primary-dark);
+    }
+
     .hero p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       max-width: 700px;
-      margin: 0 auto 2rem;
-    }
-
-    .hero .cta-btn {
-      background-color: var(--accent);
-      color: white;
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .hero .cta-btn:hover {
-      background-color: #338ad1;
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-around;
-      padding: 4rem 2rem;
-      background-color: white;
-    }
-
-    .feature {
-      max-width: 300px;
-      text-align: center;
-    }
-
-    .feature h3 {
       margin-top: 1rem;
-      font-size: 1.25rem;
-      color: var(--primary);
     }
 
-    .feature p {
-      font-size: 0.95rem;
-      color: #555;
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: var(--accent-blue);
+      margin-top: 0;
     }
 
     footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: var(--primary);
+      background-color: var(--primary-dark);
       color: white;
-      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="CurtRidge Logo" class="logo">
+    <img src="your-logo.png" alt="CurtRidge Logo" class="logo" />
     <nav>
       <a href="#">Home</a>
       <a href="#">Services</a>
-      <a href="#">Compliance</a>
-      <a href="#">Contact</a>
       <a href="#">About</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <img src="logo.png" alt="CurtRidge Solutions Logo" class="hero-logo">
-    <h1>Elite O&M Contracting for the Industrial Frontier</h1>
-    <p>Built on a foundation of trust, performance, and safety — CurtRidge Solutions delivers world-class operations and maintenance expertise to critical infrastructure across the Northwest.</p>
-    <a href="#" class="cta-btn">Get Started</a>
+    <img src="your-logo.png" alt="CurtRidge Logo Large" />
+    <h1>CurtRidge Solutions LLC</h1>
+    <p>Delivering excellence in Operations Management, Compliance, and Safety Solutions for industrial facilities across Oregon and beyond.</p>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <img src="https://source.unsplash.com/300x200/?engineer" alt="Expertise">
-      <h3>Technical Expertise</h3>
-      <p>Veteran engineers and operators with experience in high-risk, high-reliability environments.</p>
+  <section class="sections">
+    <div class="section">
+      <h2>Operations Management</h2>
+      <p>We bring hands-on expertise in plant operations, maintenance protocols, and efficiency optimization. CurtRidge ensures your facility runs at peak performance with minimal downtime.</p>
     </div>
-    <div class="feature">
-      <img src="https://source.unsplash.com/300x200/?safety" alt="Safety">
-      <h3>Safety Culture</h3>
-      <p>We don’t just comply with safety standards — we define them with our proactive, zero-incident mindset.</p>
+    <div class="section">
+      <h2>Compliance</h2>
+      <p>Our team navigates the complex world of regulatory compliance so you don’t have to. We stay ahead of DEQ, EPA, and OSHA requirements to ensure smooth audits and bulletproof reporting.</p>
     </div>
-    <div class="feature">
-      <img src="https://source.unsplash.com/300x200/?compliance,documents" alt="Compliance">
-      <h3>Regulatory Compliance</h3>
-      <p>Our documentation, procedures, and reporting are bulletproof and regulator-approved.</p>
+    <div class="section">
+      <h2>Safety</h2>
+      <p>Safety isn't a slogan—it's our operating standard. CurtRidge builds customized safety programs that protect your crew, your facility, and your reputation.</p>
     </div>
   </section>
 
@@ -169,4 +134,3 @@
   </footer>
 </body>
 </html>
-
