@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CurtRidge Solutions LLC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary-dark: #2f2f2f;
+      --accent-blue: #007acc;
+      --light-gray: #f4f4f4;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-gray);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-blue);
+    }
+
+    .hero {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: var(--primary-dark);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-top: 1rem;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .section {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: var(--accent-blue);
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="curtridge-logo-highres.png" alt="CurtRidge Logo" class="logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="curtridge-logo-highres.png" alt="CurtRidge Logo Large" />
+    <h1>Industrial Management Solutions</h1>
+    <p>Delivering excellence in Operations Management, Compliance, and Safety Solutions for industrial facilities across Oregon and beyond.</p>
+  </section>
+
+  <section class="sections">
+    <div class="section">
+      <h2>Operations Management</h2>
+      <p>We bring hands-on expertise in plant operations, maintenance protocols, and efficiency optimization. CurtRidge ensures your facility runs at peak performance with minimal downtime.</p>
+    </div>
+    <div class="section">
+      <h2>Compliance</h2>
+      <p>Our team navigates the complex world of regulatory compliance so you don’t have to. We stay ahead of DEQ, EPA, and OSHA requirements to ensure smooth audits and bulletproof reporting.</p>
+    </div>
+    <div class="section">
+      <h2>Safety</h2>
+      <p>Safety isn't a slogan—it's our operating standard. CurtRidge builds customized safety programs that protect your crew, your facility, and your reputation.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 CurtRidge Solutions LLC. All rights reserved.
+  </footer>
+</body>
+</html>
