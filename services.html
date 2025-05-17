@@ -33,22 +33,42 @@
     }
     main {
       padding: 4rem 2rem;
-    }
-    h1 {
-      color: #2f2f2f;
-      text-align: center;
-    }
-    .service-section {
       max-width: 1000px;
       margin: auto;
-      margin-top: 2rem;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .service-section h2 {
+    h1 {
+      text-align: center;
+      font-size: 2.75rem;
+      color: #2f2f2f;
+      margin-bottom: 2rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-button {
+      background-color: white;
+      border-left: 6px solid #007acc;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+      color: inherit;
+    }
+    .service-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .service-button h2 {
+      margin-top: 0;
       color: #007acc;
+    }
+    .service-button p {
+      margin-bottom: 0;
     }
     footer {
       background-color: #2f2f2f;
@@ -73,29 +93,27 @@
   <main>
     <h1>Our Services</h1>
 
-    <div class="service-section">
-      <h2>Operations Management</h2>
-      <p>From plant operations to process optimization, CurtRidge provides boots-on-the-ground expertise to keep your facility running at peak efficiency with minimal downtime.</p>
-    </div>
-
-    <div class="service-section">
-      <h2>Compliance</h2>
-      <p>We handle the regulatory headaches so you can focus on production. CurtRidge navigates DEQ, EPA, OSHA, and other compliance pathways with confidence and precision.</p>
-    </div>
-
-    <div class="service-section">
-      <h2>Safety Services</h2>
-      <p>We design and implement site-specific safety programs that meet regulatory standards while protecting your team, your equipment, and your reputation.</p>
-    </div>
-    
-    <div class="service-section">
-      <h2>Project Management</h2>
-      <p>CurtRidge Solutions provides end-to-end project management for industrial and infrastructure-focused operations. From initial planning and permitting to execution, contractor coordination, and closeout, we ensure projects are delivered safely, on schedule, and within budget. Our team brings boots-on-the-ground leadership and decades of real-world experience managing critical path timelines, construction interfaces, and regulatory milestones.</p>
-    </div>
-
-    <div class="service-section">
-      <h2>Maintenance & Reliability</h2>
-      <p>Preventative maintenance, emergency response, and long-term asset management — all backed by industrial know-how. CurtRidge keeps your equipment reliable and ready.</p>
+    <div class="services-grid">
+      <a href="contact.html" class="service-button">
+        <h2>Operations Management</h2>
+        <p>Maximize uptime and streamline performance with expert operational oversight, staffing, and system optimization.</p>
+      </a>
+      <a href="contact.html" class="service-button">
+        <h2>Compliance</h2>
+        <p>Navigate DEQ, EPA, and OSHA with full confidence. We handle permitting, reporting, and regulatory alignment.</p>
+      </a>
+      <a href="contact.html" class="service-button">
+        <h2>Safety Services</h2>
+        <p>Custom safety plans, audits, and field training that protect people, equipment, and your reputation.</p>
+      </a>
+      <a href="contact.html" class="service-button">
+        <h2>Maintenance & Reliability</h2>
+        <p>Proactive maintenance planning, asset tracking, and on-demand industrial repair support from seasoned experts.</p>
+      </a>
+      <a href="contact.html" class="service-button">
+        <h2>Project Management</h2>
+        <p>Complete project oversight—from planning and contractor coordination to closeout—delivered on time and on budget.</p>
+      </a>
     </div>
   </main>
 
